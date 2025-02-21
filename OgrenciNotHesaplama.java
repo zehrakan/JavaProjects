@@ -4,19 +4,19 @@ public class OgrenciNotHesaplama {
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] notlar = new int[5]; // 5 dersin notlarını saklayacak dizi
+        int[] notlar = new int[5]; 
         int toplam = 0;
         int enYuksek = Integer.MIN_VALUE;
         int enDusuk = Integer.MAX_VALUE;
         boolean dusukNotVar = false;
 
-        // Kullanıcıdan 5 dersin notlarını alıyoruz
+    
         for (int i = 0; i < 5; i++) {
             System.out.print((i + 1) + ". dersin notunu girin: ");
             notlar[i] = scanner.nextInt();
             toplam += notlar[i];
 
-            // En yüksek ve en düşük notları belirleme
+            
             if (notlar[i] > enYuksek) {
                 enYuksek = notlar[i];
             }
@@ -24,16 +24,16 @@ public class OgrenciNotHesaplama {
                 enDusuk = notlar[i];
             }
 
-            // Eğer herhangi bir not 30’un altındaysa uyarı vereceğiz
+            
             if (notlar[i] < 30) {
                 dusukNotVar = true;
             }
         }
 
-        // Ortalama hesaplama
+    
         double ortalama = toplam / 5.0;
 
-        // Sonuçları ekrana yazdırma
+        
         System.out.println("\nDers Notları Analizi:");
         System.out.println("Ortalamanız: " + ortalama);
 

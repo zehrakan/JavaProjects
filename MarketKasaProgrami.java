@@ -32,7 +32,7 @@ public class MarketKasaProgrami {
                     System.out.print("İndirim kuponunuz var mı? (Evet: 1 / Hayır: 0): ");
                     int kupon = scanner.nextInt();
                     if (kupon == 1) {
-                        toplamTutar *= 0.9; // %10 indirim uygulanıyor
+                        toplamTutar *= 0.9; 
                         indirimUygulandi = true;
                     }
                     System.out.println("Toplam tutar: " + toplamTutar + " TL");
